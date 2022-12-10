@@ -1,6 +1,6 @@
 # flutter_riverpod_architecture
 
-A new Flutter project.
+Riverpodを使ったレイヤードアーキテクチャのサンプルアプリ
 
 ## Getting Started
 
