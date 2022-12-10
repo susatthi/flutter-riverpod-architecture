@@ -12,12 +12,9 @@ linter:
     prefer_relative_imports: true
     use_build_context_synchronously: false
 
-# see: https://github.com/rrousselGit/freezed/issues/488#issuecomment-894358980
 analyzer:
   exclude:
     - '**/*.freezed.dart'
-    - '**/assets/*.gen.dart'
-    - '**/firebase_options_*.dart'
   errors:
     invalid_annotation_target: ignore
     todo: ignore
