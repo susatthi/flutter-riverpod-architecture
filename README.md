@@ -1,4 +1,4 @@
-# flutter_sample_async_value
+# flutter_riverpod_architecture
 
 A new Flutter project.
 

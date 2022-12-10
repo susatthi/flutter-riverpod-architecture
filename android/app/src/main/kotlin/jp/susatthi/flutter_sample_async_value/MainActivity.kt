@@ -1,4 +1,4 @@
-package jp.susatthi.flutter_sample_async_value
+package jp.susatthi.flutter_riverpod_architecture
 
 import io.flutter.embedding.android.FlutterActivity
 

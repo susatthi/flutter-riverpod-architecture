@@ -1,6 +1,6 @@
 {
-    "name": "flutter_sample_async_value",
-    "short_name": "flutter_sample_async_value",
+    "name": "flutter_riverpod_architecture",
+    "short_name": "flutter_riverpod_architecture",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
