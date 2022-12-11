@@ -4,10 +4,10 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 
 import '../../../domain/exception/database_exception.dart';
-import '../../../domain/user/entity/user.dart';
-import '../../../domain/user/entity/user_input_data.dart';
-import '../../../domain/user/entity/value_object/nickname.dart';
-import '../../../domain/user/user_repository.dart';
+import '../../../domain/repository/user/entity/user.dart';
+import '../../../domain/repository/user/entity/user_input_data.dart';
+import '../../../domain/repository/user/entity/value_object/nickname.dart';
+import '../../../domain/repository/user/user_repository.dart';
 
 /// メモリ版ユーザーリポジトリ
 class MemoryUserRepository extends ChangeNotifier implements UserRepository {

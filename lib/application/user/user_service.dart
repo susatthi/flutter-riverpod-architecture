@@ -1,8 +1,8 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../domain/user/entity/user_input_data.dart';
-import '../../domain/user/entity/value_object/nickname.dart';
-import '../../domain/user/user_repository.dart';
+import '../../domain/repository/user/entity/user_input_data.dart';
+import '../../domain/repository/user/entity/value_object/nickname.dart';
+import '../../domain/repository/user/user_repository.dart';
 import 'state/user_update_result.dart';
 
 final userServiceProvider = Provider(

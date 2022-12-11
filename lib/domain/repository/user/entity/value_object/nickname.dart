@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../../entity/value_object.dart';
-import '../../../exception/validator_exception.dart';
+import '../../../../entity/value_object.dart';
+import '../../../../exception/validator_exception.dart';
 
 part 'nickname.freezed.dart';
 

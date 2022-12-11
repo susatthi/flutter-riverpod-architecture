@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'domain/user/user_repository.dart';
+import 'domain/repository/user/user_repository.dart';
 import 'infrastructure/memory/user/user_repository.dart';
 import 'presentation/app.dart';
 

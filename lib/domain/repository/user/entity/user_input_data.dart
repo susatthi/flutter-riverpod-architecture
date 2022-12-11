@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../entity/input_data.dart';
+import '../../../entity/input_data.dart';
 import 'value_object/nickname.dart';
 
 part 'user_input_data.freezed.dart';
