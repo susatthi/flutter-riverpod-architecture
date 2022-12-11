@@ -25,19 +25,28 @@ class UserEditPage extends ConsumerWidget {
       appBar: AppBar(
         title: const Text('ユーザー'),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(20),
-        child: Column(
-          children: const [
-            _NicknameTextField(),
-            SizedBox(height: 20),
-            SizedBox(
-              height: 48,
-              width: double.infinity,
-              child: _UpdateButton(),
-            ),
-          ],
-        ),
+      body: const _Body(),
+    );
+  }
+}
+
+class _Body extends StatelessWidget {
+  const _Body();
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(20),
+      child: Column(
+        children: const [
+          _NicknameTextField(),
+          SizedBox(height: 20),
+          SizedBox(
+            height: 48,
+            width: double.infinity,
+            child: _UpdateButton(),
+          ),
+        ],
       ),
     );
   }
