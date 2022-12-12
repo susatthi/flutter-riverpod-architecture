@@ -4,7 +4,7 @@ import 'value_object/nickname.dart';
 
 part 'user.freezed.dart';
 
-/// ユーザー
+/// ユーザーエンティティ
 @freezed
 class User with _$User {
   const factory User({

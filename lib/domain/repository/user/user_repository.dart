@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'entity/user.dart';
-import 'entity/user_input_data.dart';
+import 'entity/user_input_entity.dart';
 
 /// ユーザープロバイダー
 final userProvider = StreamProvider(
@@ -19,5 +19,5 @@ abstract class UserRepository {
   Stream<User?> userChanges();
 
   /// ユーザーを更新する
-  Future<void> updateUser(UserInputData inputData);
+  Future<void> updateUser(UserInputEntity input);
 }
