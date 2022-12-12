@@ -1,5 +1,3 @@
-import 'database_exception.dart';
-
 /// 基底ドメイン例外
 ///
 /// ドメイン層が定義する例外の基底クラス
@@ -15,15 +13,5 @@ abstract class DomainException implements Exception {
       return 'DomainException';
     }
     return 'DomainException: $message';
-  }
-}
-
-extension DomainExceptionEx on DomainException {
-  /// ユーザーに表示するエラーメッセージを返す
-  String get errorMessage {
-    if (this is DatabaseException) {
-      return (this as DatabaseException).errorMessage;
-    }
-    return toString();
   }
 }

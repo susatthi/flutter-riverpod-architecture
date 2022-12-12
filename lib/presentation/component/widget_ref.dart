@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../domain/exception/domain_exception.dart';
 import 'dialog.dart';
+import 'exception.dart';
 import 'loading.dart';
 import 'scaffold_messenger.dart';
 
@@ -46,7 +46,7 @@ extension WidgetRefEx on WidgetRef {
             await showDialog<void>(
               context: read(navigatorKeyProvider).currentContext!,
               builder: (context) => ErrorDialog(
-                message: e.errorMessage,
+                message: e.errorMessage(),
               ),
             );
           },
@@ -59,15 +59,5 @@ extension WidgetRefEx on WidgetRef {
         );
       },
     );
-  }
-}
-
-extension _ObjectEx on Object {
-  /// エラーメッセージを返す
-  String get errorMessage {
-    if (this is DomainException) {
-      return (this as DomainException).errorMessage;
-    }
-    return toString();
   }
 }
