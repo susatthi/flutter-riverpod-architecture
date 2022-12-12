@@ -105,8 +105,8 @@ class __$$_UserInputEntityCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_UserInputEntity extends _UserInputEntity {
-  const _$_UserInputEntity({required this.nickname}) : super._();
+class _$_UserInputEntity implements _UserInputEntity {
+  const _$_UserInputEntity({required this.nickname});
 
   /// ニックネーム
   @override
@@ -136,10 +136,9 @@ class _$_UserInputEntity extends _UserInputEntity {
       __$$_UserInputEntityCopyWithImpl<_$_UserInputEntity>(this, _$identity);
 }
 
-abstract class _UserInputEntity extends UserInputEntity {
+abstract class _UserInputEntity implements UserInputEntity {
   const factory _UserInputEntity({required final Nickname nickname}) =
       _$_UserInputEntity;
-  const _UserInputEntity._() : super._();
 
   @override
 

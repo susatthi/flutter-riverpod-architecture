@@ -89,8 +89,8 @@ class __$$_NicknameCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Nickname extends _Nickname {
-  const _$_Nickname({required this.value}) : super._();
+class _$_Nickname implements _Nickname {
+  const _$_Nickname({required this.value});
 
   @override
   final String value;
@@ -118,9 +118,8 @@ class _$_Nickname extends _Nickname {
       __$$_NicknameCopyWithImpl<_$_Nickname>(this, _$identity);
 }
 
-abstract class _Nickname extends Nickname {
+abstract class _Nickname implements Nickname {
   const factory _Nickname({required final String value}) = _$_Nickname;
-  const _Nickname._() : super._();
 
   @override
   String get value;

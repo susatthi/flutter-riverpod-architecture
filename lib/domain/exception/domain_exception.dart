@@ -1,5 +1,4 @@
 import 'database_exception.dart';
-import 'validator_exception.dart';
 
 /// 基底ドメイン例外
 ///
@@ -24,9 +23,6 @@ extension DomainExceptionEx on DomainException {
   String get errorMessage {
     if (this is DatabaseException) {
       return (this as DatabaseException).errorMessage;
-    }
-    if (this is ValidatorException) {
-      return (this as ValidatorException).errorMessage;
     }
     return toString();
   }

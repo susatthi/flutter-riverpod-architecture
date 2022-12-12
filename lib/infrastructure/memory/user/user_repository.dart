@@ -49,9 +49,6 @@ class MemoryUserRepository extends ChangeNotifier implements UserRepository {
     // ローディングを出したいので擬似的に1秒待つ
     await Future<void>.delayed(const Duration(seconds: 1));
 
-    // 入力データを検証する
-    input.validate();
-
     // 1/2の確率で書き込みエラー
     if ((Random().nextInt(2) % 2).isEven) {
       throw DatabaseException.updateFailed(label: 'ユーザー');
