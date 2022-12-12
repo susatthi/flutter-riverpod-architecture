@@ -2,14 +2,13 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 
 import 'value_object/nickname.dart';
 
-part 'user.freezed.dart';
+part 'user_input.freezed.dart';
 
-/// ユーザーエンティティ
+/// ユーザー入力エンティティ
 @freezed
-class User with _$User {
-  const factory User({
+class UserInput with _$UserInput {
+  const factory UserInput({
     /// ニックネーム
     required Nickname nickname,
-  }) = _User;
-  const User._();
+  }) = _UserInput;
 }

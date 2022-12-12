@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'user_input_entity.dart';
+part of 'user_output.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,20 +15,20 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-mixin _$UserInputEntity {
+mixin _$UserOutput {
   /// ニックネーム
   Nickname get nickname => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $UserInputEntityCopyWith<UserInputEntity> get copyWith =>
+  $UserOutputCopyWith<UserOutput> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $UserInputEntityCopyWith<$Res> {
-  factory $UserInputEntityCopyWith(
-          UserInputEntity value, $Res Function(UserInputEntity) then) =
-      _$UserInputEntityCopyWithImpl<$Res, UserInputEntity>;
+abstract class $UserOutputCopyWith<$Res> {
+  factory $UserOutputCopyWith(
+          UserOutput value, $Res Function(UserOutput) then) =
+      _$UserOutputCopyWithImpl<$Res, UserOutput>;
   @useResult
   $Res call({Nickname nickname});
 
@@ -36,9 +36,9 @@ abstract class $UserInputEntityCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UserInputEntityCopyWithImpl<$Res, $Val extends UserInputEntity>
-    implements $UserInputEntityCopyWith<$Res> {
-  _$UserInputEntityCopyWithImpl(this._value, this._then);
+class _$UserOutputCopyWithImpl<$Res, $Val extends UserOutput>
+    implements $UserOutputCopyWith<$Res> {
+  _$UserOutputCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -68,11 +68,11 @@ class _$UserInputEntityCopyWithImpl<$Res, $Val extends UserInputEntity>
 }
 
 /// @nodoc
-abstract class _$$_UserInputEntityCopyWith<$Res>
-    implements $UserInputEntityCopyWith<$Res> {
-  factory _$$_UserInputEntityCopyWith(
-          _$_UserInputEntity value, $Res Function(_$_UserInputEntity) then) =
-      __$$_UserInputEntityCopyWithImpl<$Res>;
+abstract class _$$_UserOutputCopyWith<$Res>
+    implements $UserOutputCopyWith<$Res> {
+  factory _$$_UserOutputCopyWith(
+          _$_UserOutput value, $Res Function(_$_UserOutput) then) =
+      __$$_UserOutputCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({Nickname nickname});
@@ -82,11 +82,11 @@ abstract class _$$_UserInputEntityCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_UserInputEntityCopyWithImpl<$Res>
-    extends _$UserInputEntityCopyWithImpl<$Res, _$_UserInputEntity>
-    implements _$$_UserInputEntityCopyWith<$Res> {
-  __$$_UserInputEntityCopyWithImpl(
-      _$_UserInputEntity _value, $Res Function(_$_UserInputEntity) _then)
+class __$$_UserOutputCopyWithImpl<$Res>
+    extends _$UserOutputCopyWithImpl<$Res, _$_UserOutput>
+    implements _$$_UserOutputCopyWith<$Res> {
+  __$$_UserOutputCopyWithImpl(
+      _$_UserOutput _value, $Res Function(_$_UserOutput) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -94,7 +94,7 @@ class __$$_UserInputEntityCopyWithImpl<$Res>
   $Res call({
     Object? nickname = null,
   }) {
-    return _then(_$_UserInputEntity(
+    return _then(_$_UserOutput(
       nickname: null == nickname
           ? _value.nickname
           : nickname // ignore: cast_nullable_to_non_nullable
@@ -105,8 +105,8 @@ class __$$_UserInputEntityCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_UserInputEntity implements _UserInputEntity {
-  const _$_UserInputEntity({required this.nickname});
+class _$_UserOutput extends _UserOutput {
+  const _$_UserOutput({required this.nickname}) : super._();
 
   /// ニックネーム
   @override
@@ -114,14 +114,14 @@ class _$_UserInputEntity implements _UserInputEntity {
 
   @override
   String toString() {
-    return 'UserInputEntity(nickname: $nickname)';
+    return 'UserOutput(nickname: $nickname)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_UserInputEntity &&
+            other is _$_UserOutput &&
             (identical(other.nickname, nickname) ||
                 other.nickname == nickname));
   }
@@ -132,13 +132,13 @@ class _$_UserInputEntity implements _UserInputEntity {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_UserInputEntityCopyWith<_$_UserInputEntity> get copyWith =>
-      __$$_UserInputEntityCopyWithImpl<_$_UserInputEntity>(this, _$identity);
+  _$$_UserOutputCopyWith<_$_UserOutput> get copyWith =>
+      __$$_UserOutputCopyWithImpl<_$_UserOutput>(this, _$identity);
 }
 
-abstract class _UserInputEntity implements UserInputEntity {
-  const factory _UserInputEntity({required final Nickname nickname}) =
-      _$_UserInputEntity;
+abstract class _UserOutput extends UserOutput {
+  const factory _UserOutput({required final Nickname nickname}) = _$_UserOutput;
+  const _UserOutput._() : super._();
 
   @override
 
@@ -146,6 +146,6 @@ abstract class _UserInputEntity implements UserInputEntity {
   Nickname get nickname;
   @override
   @JsonKey(ignore: true)
-  _$$_UserInputEntityCopyWith<_$_UserInputEntity> get copyWith =>
+  _$$_UserOutputCopyWith<_$_UserOutput> get copyWith =>
       throw _privateConstructorUsedError;
 }

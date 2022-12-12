@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'user.dart';
+part of 'user_input.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,18 +15,19 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-mixin _$User {
+mixin _$UserInput {
   /// ニックネーム
   Nickname get nickname => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $UserCopyWith<User> get copyWith => throw _privateConstructorUsedError;
+  $UserInputCopyWith<UserInput> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $UserCopyWith<$Res> {
-  factory $UserCopyWith(User value, $Res Function(User) then) =
-      _$UserCopyWithImpl<$Res, User>;
+abstract class $UserInputCopyWith<$Res> {
+  factory $UserInputCopyWith(UserInput value, $Res Function(UserInput) then) =
+      _$UserInputCopyWithImpl<$Res, UserInput>;
   @useResult
   $Res call({Nickname nickname});
 
@@ -34,9 +35,9 @@ abstract class $UserCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UserCopyWithImpl<$Res, $Val extends User>
-    implements $UserCopyWith<$Res> {
-  _$UserCopyWithImpl(this._value, this._then);
+class _$UserInputCopyWithImpl<$Res, $Val extends UserInput>
+    implements $UserInputCopyWith<$Res> {
+  _$UserInputCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -66,9 +67,10 @@ class _$UserCopyWithImpl<$Res, $Val extends User>
 }
 
 /// @nodoc
-abstract class _$$_UserCopyWith<$Res> implements $UserCopyWith<$Res> {
-  factory _$$_UserCopyWith(_$_User value, $Res Function(_$_User) then) =
-      __$$_UserCopyWithImpl<$Res>;
+abstract class _$$_UserInputCopyWith<$Res> implements $UserInputCopyWith<$Res> {
+  factory _$$_UserInputCopyWith(
+          _$_UserInput value, $Res Function(_$_UserInput) then) =
+      __$$_UserInputCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({Nickname nickname});
@@ -78,9 +80,11 @@ abstract class _$$_UserCopyWith<$Res> implements $UserCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res, _$_User>
-    implements _$$_UserCopyWith<$Res> {
-  __$$_UserCopyWithImpl(_$_User _value, $Res Function(_$_User) _then)
+class __$$_UserInputCopyWithImpl<$Res>
+    extends _$UserInputCopyWithImpl<$Res, _$_UserInput>
+    implements _$$_UserInputCopyWith<$Res> {
+  __$$_UserInputCopyWithImpl(
+      _$_UserInput _value, $Res Function(_$_UserInput) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -88,7 +92,7 @@ class __$$_UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res, _$_User>
   $Res call({
     Object? nickname = null,
   }) {
-    return _then(_$_User(
+    return _then(_$_UserInput(
       nickname: null == nickname
           ? _value.nickname
           : nickname // ignore: cast_nullable_to_non_nullable
@@ -99,8 +103,8 @@ class __$$_UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res, _$_User>
 
 /// @nodoc
 
-class _$_User extends _User {
-  const _$_User({required this.nickname}) : super._();
+class _$_UserInput implements _UserInput {
+  const _$_UserInput({required this.nickname});
 
   /// ニックネーム
   @override
@@ -108,14 +112,14 @@ class _$_User extends _User {
 
   @override
   String toString() {
-    return 'User(nickname: $nickname)';
+    return 'UserInput(nickname: $nickname)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_User &&
+            other is _$_UserInput &&
             (identical(other.nickname, nickname) ||
                 other.nickname == nickname));
   }
@@ -126,13 +130,12 @@ class _$_User extends _User {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_UserCopyWith<_$_User> get copyWith =>
-      __$$_UserCopyWithImpl<_$_User>(this, _$identity);
+  _$$_UserInputCopyWith<_$_UserInput> get copyWith =>
+      __$$_UserInputCopyWithImpl<_$_UserInput>(this, _$identity);
 }
 
-abstract class _User extends User {
-  const factory _User({required final Nickname nickname}) = _$_User;
-  const _User._() : super._();
+abstract class _UserInput implements UserInput {
+  const factory _UserInput({required final Nickname nickname}) = _$_UserInput;
 
   @override
 
@@ -140,5 +143,6 @@ abstract class _User extends User {
   Nickname get nickname;
   @override
   @JsonKey(ignore: true)
-  _$$_UserCopyWith<_$_User> get copyWith => throw _privateConstructorUsedError;
+  _$$_UserInputCopyWith<_$_UserInput> get copyWith =>
+      throw _privateConstructorUsedError;
 }

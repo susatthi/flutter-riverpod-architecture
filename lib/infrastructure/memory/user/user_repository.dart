@@ -4,8 +4,8 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 
 import '../../../domain/exception/database_exception.dart';
-import '../../../domain/repository/user/entity/user.dart';
-import '../../../domain/repository/user/entity/user_input_entity.dart';
+import '../../../domain/repository/user/entity/user_input.dart';
+import '../../../domain/repository/user/entity/user_output.dart';
 import '../../../domain/repository/user/entity/value_object/nickname.dart';
 import '../../../domain/repository/user/user_repository.dart';
 
@@ -23,7 +23,7 @@ class MemoryUserRepository extends ChangeNotifier implements UserRepository {
     () async {
       // 初回読み込みに擬似的に2秒待つ
       await Future<void>.delayed(const Duration(seconds: 2));
-      _user = const User(
+      _user = const UserOutput(
         nickname: Nickname(value: '山田太郎'),
       );
       notifyListeners();
@@ -31,9 +31,9 @@ class MemoryUserRepository extends ChangeNotifier implements UserRepository {
   }
 
   // ユーザー
-  User? _user;
+  UserOutput? _user;
 
-  final userChangesController = StreamController<User?>.broadcast();
+  final userChangesController = StreamController<UserOutput?>.broadcast();
 
   @override
   void dispose() {
@@ -42,10 +42,10 @@ class MemoryUserRepository extends ChangeNotifier implements UserRepository {
   }
 
   @override
-  Stream<User?> userChanges() => userChangesController.stream;
+  Stream<UserOutput?> userChanges() => userChangesController.stream;
 
   @override
-  Future<void> updateUser(UserInputEntity input) async {
+  Future<void> updateUser(UserInput input) async {
     // ローディングを出したいので擬似的に1秒待つ
     await Future<void>.delayed(const Duration(seconds: 1));
 
