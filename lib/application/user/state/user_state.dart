@@ -5,7 +5,7 @@ import '../../../domain/repository/user/user_repository.dart';
 
 part 'user_state.freezed.dart';
 
-/// ユーザーが更新されたらユーザー状態に変換して返す
+/// ユーザーエンティティが更新されたらユーザー状態に変換して返す
 final userStateProvider = FutureProvider(
   (ref) async {
     final user = await ref.watch(userProvider.future);
